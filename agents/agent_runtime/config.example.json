@@ -1,0 +1,44 @@
+{
+    "device_id": "dev_simulator",
+    "root_key_source": "keystore",
+    "database": {
+        "type": "sqlite",
+        "path": "/var/lib/alphaclone/agent_memory.db",
+        "encryption": "aes-256-gcm",
+        "retention_days": 365
+    },
+    "runtime": {
+        "ipc_dir": "/tmp/alphaclone/ipc",
+        "log_path": "/var/log/alphaclone/agents.log",
+        "sandbox": {
+            "enabled": true,
+            "seccomp_profile": "default"
+        }
+    },
+    "cloud": {
+        "enabled": false,
+        "endpoint": "https://cloud.alphaclone.example/sync",
+        "mtls_cert_path": "",
+        "mtls_key_path": "",
+        "allowed_namespaces": []
+    },
+    "local_ai": {
+        "preferred": true,
+        "models": [
+            {
+                "name": "tiny-llm",
+                "path": "./models/tiny-llm.onnx",
+                "max_tokens": 1024
+            }
+        ]
+    },
+    "capabilities": {
+        "system_agent": ["process_list", "file_access", "network_stats"],
+        "security_agent": ["process_control", "network_filter"],
+        "network_agent": ["network_access"],
+        "aiops_agent": ["model_inference"],
+        "file_agent": ["file_access"],
+        "ui_agent": ["display_access"],
+        "devcore_agent": ["system_info"]
+    }
+}
