@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-kernel-sim:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build kernel_sim
+        run: |
+          cd kernel_sim
+          make
+      - name: Run smoke test
+        run: |
+          cd kernel_sim
+          printf "help\nls\nexit\n" | ./kernel_sim || true
