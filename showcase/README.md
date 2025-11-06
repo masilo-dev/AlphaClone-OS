@@ -134,6 +134,9 @@ node record-animation.js
 ```bash
 # Example FFmpeg command (Linux/macOS)
 ffmpeg -video_size 1920x1080 -framerate 60 -f x11grab -i :0.0+0,0 -t 30 alphaclone-os-demo.mp4
+
+# Example FFmpeg command (Windows)
+ffmpeg -video_size 1920x1080 -framerate 60 -f gdigrab -i desktop -t 30 alphaclone-os-demo.mp4
 ```
 
 ## 📐 Video Specifications

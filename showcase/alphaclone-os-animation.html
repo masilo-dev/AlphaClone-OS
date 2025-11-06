@@ -614,6 +614,8 @@
         // Auto-cycle through modules
         const modules = document.querySelectorAll('.module-panel');
         let currentIndex = 0;
+        let cycleInterval = null;
+        let hoverTimeouts = new Map();
 
         function activateModule(index) {
             modules.forEach((module, i) => {
@@ -627,7 +629,7 @@
 
         // Start cycling after the interface appears
         setTimeout(() => {
-            setInterval(() => {
+            cycleInterval = setInterval(() => {
                 activateModule(currentIndex);
                 currentIndex = (currentIndex + 1) % modules.length;
             }, 3000);
@@ -640,12 +642,17 @@
             });
 
             module.addEventListener('mouseleave', function() {
+                // Clear any existing timeout for this module
+                if (hoverTimeouts.has(this)) {
+                    clearTimeout(hoverTimeouts.get(this));
+                }
                 // Only remove active if not in auto-cycle
-                setTimeout(() => {
+                const timeoutId = setTimeout(() => {
                     if (!this.matches(':hover')) {
                         this.classList.remove('active');
                     }
                 }, 300);
+                hoverTimeouts.set(this, timeoutId);
             });
         });
 
@@ -654,6 +661,14 @@
             setTimeout(() => {
                 document.querySelector('.startup-logo').style.animation = 'logoAppear 3s ease-out forwards';
             }, 100);
+        });
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', () => {
+            if (cycleInterval) {
+                clearInterval(cycleInterval);
+            }
+            hoverTimeouts.forEach(timeout => clearTimeout(timeout));
         });
     </script>
 </body>
