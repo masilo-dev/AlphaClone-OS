@@ -1,4 +1,4 @@
-# 🎨 AlphaClone-OS Visual Showcase
+# AlphaClone-OS Visual Showcase
 
 > A production-ready operating system with intelligent agents
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 🖼️ System Architecture Visualization
+## System Architecture Visualization
 
 ```ascii
 ╔════════════════════════════════════════════════════════════════╗
@@ -53,7 +53,7 @@
 
 ---
 
-## 📊 Component Status Dashboard
+## Component Status Dashboard
 
 ```
 ┌───────────────────────────────────────────────────────────┐
@@ -94,9 +94,9 @@
 
 ---
 
-## 🎯 Feature Highlights
+## Feature Highlights
 
-### ⚡ Performance Metrics
+### Performance Metrics
 
 ```
 Boot Time:        ████░░░░░░  5 seconds
@@ -106,7 +106,7 @@ IPC Latency:      ██████████  < 1 ms
 Cloud Sync:       ████████░░  10+ MB/s
 ```
 
-### 🛡️ Security Features
+### Security Features
 
 ```
 ┌─────────────────────────────────────────┐
@@ -125,7 +125,7 @@ Cloud Sync:       ████████░░  10+ MB/s
 
 ---
 
-## 🚀 Quick Start Visualization
+## Quick Start Visualization
 
 ```
 Step 1: Clone Repository
@@ -154,7 +154,7 @@ Step 4: Run in QEMU
 
 ---
 
-## 🌐 Agent Communication Flow
+## Agent Communication Flow
 
 ```
 ┌──────────┐
@@ -189,7 +189,7 @@ Step 4: Run in QEMU
 
 ---
 
-## 📈 System Statistics
+## System Statistics
 
 ```
 Total Lines of Code:     15,000+
@@ -205,57 +205,57 @@ Test Coverage:           85%
 
 ---
 
-## 🎨 Directory Tree Visualization
+## Directory Tree Visualization
 
 ```
 AlphaClone-OS/
 │
-├─📄 README.md ...................... Main documentation
-├─📄 SYSTEM_OVERVIEW.md ............. System walkthrough
-├─📄 LICENSE ........................ MIT License
+├─ README.md ...................... Main documentation
+├─ SYSTEM_OVERVIEW.md ............. System walkthrough
+├─ LICENSE ........................ MIT License
 │
-├─📁 alphaclone-system/ ............. Production OS
-│  ├─⚙️  boot/ ....................... Bootloader (ASM)
-│  ├─🔧 kernel/ ..................... Kernel implementation
-│  ├─🤖 agents/ ..................... TypeScript orchestrator
-│  └─🛠️  system/ ..................... Build scripts
+├─ alphaclone-system/ ............. Production OS
+│  ├─ boot/ ....................... Bootloader (ASM)
+│  ├─ kernel/ ..................... Kernel implementation
+│  ├─ agents/ ..................... TypeScript orchestrator
+│  └─ system/ ..................... Build scripts
 │
-├─📁 kernel_sim/ .................... Development kernel
-│  ├─📝 vfs_fd.c .................... VFS with file descriptors
-│  ├─📝 fs.c ........................ Filesystem backend
-│  └─📁 examples/ ................... Demo programs
+├─ kernel_sim/ .................... Development kernel
+│  ├─ vfs_fd.c .................... VFS with file descriptors
+│  ├─ fs.c ........................ Filesystem backend
+│  └─ examples/ ................... Demo programs
 │
-├─📁 agents/ ........................ Intelligent agents
-│  ├─🔐 agent_runtime/ .............. Core runtime services
+├─ agents/ ........................ Intelligent agents
+│  ├─ agent_runtime/ .............. Core runtime services
 │  │  ├─ runtime.py ................. Message bus & IPC
 │  │  ├─ auth.py .................... TPM integration
 │  │  ├─ sandbox.py ................. Security sandbox
 │  │  ├─ sync.py .................... Cloud synchronization
 │  │  └─ monitor.py ................. System monitoring
 │  │
-│  ├─🤖 agents/
+│  ├─ agents/
 │  │  ├─ security_agent/ ............ Process monitoring
 │  │  ├─ aiops_agent/ ............... AI operations
 │  │  ├─ network_agent/ ............. Cloud & networking
 │  │  ├─ ui_agent/ .................. Desktop environment
 │  │  └─ device_agent/ .............. Hardware management
 │  │
-│  └─📝 agent_launcher.py ........... Agent lifecycle manager
+│  └─ agent_launcher.py ........... Agent lifecycle manager
 │
-├─📁 docs/ .......................... Documentation
+├─ docs/ .......................... Documentation
 │  ├─ architecture.md ............... System design
 │  ├─ FEATURES.md ................... Feature details
 │  ├─ CONTRIBUTING.md ............... How to contribute
 │  └─ agent_integration.md .......... Agent framework
 │
-└─📁 tools/ ......................... Development tools
+└─ tools/ ......................... Development tools
    ├─ create_disk_image.sh .......... ISO builder
    └─ qemu_run.sh ................... QEMU launcher
 ```
 
 ---
 
-## 💻 Code Examples
+## Code Examples
 
 ### Example 1: Using VFS API
 
@@ -292,29 +292,29 @@ runtime.send_message(
 
 ---
 
-## 🏆 What Makes AlphaClone-OS Special?
+## What Makes AlphaClone-OS Special?
 
 ```
 ┌────────────────────────────────────────────────┐
 │                                                 │
-│  ✨ Production-Ready Operating System          │
-│  🧠 AI-Powered Intelligent Agents              │
-│  🔒 Enterprise-Grade Security                  │
-│  ☁️  Seamless Cloud Integration                │
-│  📊 Comprehensive Monitoring                   │
-│  🚀 Optimized Performance                      │
-│  📚 Extensive Documentation                    │
-│  🔧 Developer-Friendly Tools                   │
+│  Production-Ready Operating System             │
+│  AI-Powered Intelligent Agents                 │
+│  Enterprise-Grade Security                     │
+│  Seamless Cloud Integration                    │
+│  Comprehensive Monitoring                      │
+│  Optimized Performance                         │
+│  Extensive Documentation                       │
+│  Developer-Friendly Tools                      │
 │                                                 │
 └────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🌟 Star History
+## Star History
 
 ```
-Help us grow! ⭐ Star this repo on GitHub
+Help us grow! Star this repo on GitHub
 
 https://github.com/masilo-dev/AlphaClone-OS
 ```

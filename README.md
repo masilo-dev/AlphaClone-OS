@@ -1,4 +1,4 @@
-# AlphaClone-OS 🚀
+# AlphaClone-OS
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/masilo-dev/AlphaClone-OS)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -8,17 +8,17 @@
 **A production-ready, AI-powered operating system with intelligent agent framework**
 
 AlphaClone-OS is a complete operating system featuring:
-- ⚡ **Real Kernel** with process management, memory allocation, and VFS
-- 🖥️ **Wayland Desktop Environment** for modern graphics
-- 🤖 **Intelligent Agent System** with local and cloud AI
-- 🔒 **Advanced Security** with TPM integration and sandboxing
-- ☁️ **Cloud Sync** with end-to-end encryption
-- 📊 **System Monitoring** with comprehensive metrics
-- 🔌 **Hardware Support** for devices, storage, and peripherals
+- **Real Kernel** with process management, memory allocation, and VFS
+- **Wayland Desktop Environment** for modern graphics
+- **Intelligent Agent System** with local and cloud AI
+- **Advanced Security** with TPM integration and sandboxing
+- **Cloud Sync** with end-to-end encryption
+- **System Monitoring** with comprehensive metrics
+- **Hardware Support** for devices, storage, and peripherals
 
 ---
 
-## 📸 System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -46,7 +46,7 @@ AlphaClone-OS is a complete operating system featuring:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Build the Kernel Simulator
 
@@ -78,7 +78,7 @@ make run
 
 ---
 
-## 📦 Components
+## Components
 
 ### 1. Kernel (`kernel_sim/` & `alphaclone-system/kernel/`)
 - Process scheduler with priority queues
@@ -109,7 +109,7 @@ make run
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Prerequisites
 
@@ -147,7 +147,7 @@ AlphaClone-OS/
 
 ---
 
-## 🔐 Security Features
+## Security Features
 
 - **TPM Integration**: Hardware-backed key storage
 - **Seccomp Filtering**: Syscall restrictions per agent
@@ -158,7 +158,7 @@ AlphaClone-OS/
 
 ---
 
-## 📊 Monitoring & Metrics
+## Monitoring & Metrics
 
 The system includes comprehensive monitoring:
 
@@ -175,7 +175,7 @@ tail -f /var/log/alphaclone/agents.log
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
@@ -187,7 +187,7 @@ We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidel
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 - [Architecture Overview](docs/architecture.md)
 - [Agent Integration](docs/agent_integration.md)
@@ -197,7 +197,7 @@ We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidel
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [x] Kernel simulator with VFS
 - [x] Agent runtime with IPC
@@ -213,13 +213,13 @@ We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidel
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🌟 Features Highlight
+## Features Highlight
 
 | Feature | Status | Description |
 |---------|--------|-------------|
@@ -233,7 +233,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 💡 Use Cases
+## Use Cases
 
 - **Development**: Full OS environment for system programming
 - **IoT Devices**: Lightweight OS with cloud connectivity
@@ -243,4 +243,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by the AlphaClone-OS Team**
+**Built with care by the AlphaClone-OS Team**
