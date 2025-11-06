@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://alphaclone.systems/schema/ai-agent.schema.json",
+  "$comment": "AlphaClone System OS - Agent Manifest Schema | Author: AlphaClone Systems Core Team | License: MIT | TODO: Expand with agent capability validation rules.",
+  "title": "AlphaClone System OS Agent Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "capabilities",
+    "resources",
+    "api_endpoints",
+    "permissions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique agent identifier." 
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Human readable agent name."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v?[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version identifier."
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "api_endpoints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

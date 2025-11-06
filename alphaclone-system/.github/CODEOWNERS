@@ -1,0 +1,9 @@
+# AlphaClone System OS - Code Ownership Map
+# Purpose: Assign reviewers for critical subsystems.
+# Author: AlphaClone Systems Core Team
+# License: MIT
+# TODO: Update ownership as new maintainers join.
+
+* @repo-owner
+alphaclone-system/kernel/ @repo-owner
+alphaclone-system/agents/ @repo-owner

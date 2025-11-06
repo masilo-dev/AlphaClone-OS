@@ -1,0 +1,74 @@
+---
+# AlphaClone System OS - CI Pipeline
+# Purpose: Build kernel artifacts and validate agent workspace on every push.
+# Author: AlphaClone Systems Core Team
+# License: MIT
+# TODO: Integrate security scanning and release promotion stages.
+
+name: build
+
+on:
+  push:
+    branches: [ main, core/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  kernel-build:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: alphaclone-system
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nasm gcc-multilib grub-pc-bin xorriso qemu-system-x86
+
+      - name: Build kernel and ISO
+        run: |
+          make kernel
+          make iso
+
+      - name: Upload kernel artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kernel-bin
+          path: alphaclone-system/build/kernel.bin
+
+      - name: Upload ISO artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: alpha-system-iso
+          path: alphaclone-system/build/alpha-system.iso
+
+  agents-build:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: alphaclone-system
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint agents
+        run: pnpm lint
+
+      - name: Build agents
+        run: pnpm build
