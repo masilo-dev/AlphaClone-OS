@@ -187,11 +187,11 @@ System Status:
   Disk:   [████░░░░░░] 40%
   
 Active Agents:
-  ✓ security_agent   (Running)
-  ✓ aiops_agent      (Running)
-  ✓ network_agent    (Running)
-  ✓ ui_agent         (Running)
-  ✓ device_agent     (Running)
+  • security_agent   (Running)
+  • aiops_agent      (Running)
+  • network_agent    (Running)
+  • ui_agent         (Running)
+  • device_agent     (Running)
 ```
 
 ---

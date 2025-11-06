@@ -112,14 +112,14 @@ Cloud Sync:       ████████░░  10+ MB/s
 ┌─────────────────────────────────────────┐
 │  Security Layer                         │
 ├─────────────────────────────────────────┤
-│  ✓ TPM 2.0 Hardware Integration         │
-│  ✓ Secure Boot Support                  │
-│  ✓ Seccomp Syscall Filtering            │
-│  ✓ Per-Agent Sandboxing                 │
-│  ✓ AES-256-GCM Encryption               │
-│  ✓ Mutual TLS Authentication            │
-│  ✓ End-to-End Data Protection           │
-│  ✓ Capability-Based Access Control      │
+│  • TPM 2.0 Hardware Integration         │
+│  • Secure Boot Support                  │
+│  • Seccomp Syscall Filtering            │
+│  • Per-Agent Sandboxing                 │
+│  • AES-256-GCM Encryption               │
+│  • Mutual TLS Authentication            │
+│  • End-to-End Data Protection           │
+│  • Capability-Based Access Control      │
 └─────────────────────────────────────────┘
 ```
 
@@ -149,7 +149,7 @@ Step 4: Run in QEMU
    │  ./tools/qemu_run.sh alphaclone.iso
    │
    ▼
-   ✅ System Running!
+   System Running!
 ```
 
 ---
