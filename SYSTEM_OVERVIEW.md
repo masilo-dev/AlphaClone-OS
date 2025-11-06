@@ -1,62 +1,62 @@
 # AlphaClone-OS - System Overview
 
-## 🎯 Complete Operating System - Now Live!
+## Complete Operating System - Now Live!
 
 **Repository**: https://github.com/masilo-dev/AlphaClone-OS
 
 ---
 
-## ✅ What's Included
+## What's Included
 
 ### Core Operating System
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                  AlphaClone-OS v1.0                      │
-│                  Production Ready ✅                      │
+│                  Production Ready                        │
 └─────────────────────────────────────────────────────────┘
 
-📁 alphaclone-system/
-   ├── 🔧 boot/              Bootloader (ASM, GRUB)
-   ├── ⚙️  kernel/           Kernel implementation
+alphaclone-system/
+   ├── boot/              Bootloader (ASM, GRUB)
+   ├── kernel/           Kernel implementation
    │   ├── Process scheduler
    │   ├── Memory manager
    │   ├── VFS implementation
    │   ├── Device drivers (VGA, keyboard, disk)
    │   └── Interrupt handlers
-   ├── 🤖 agents/            Agent orchestrator
-   └── 🛠️  system/           Build scripts
+   ├── agents/            Agent orchestrator
+   └── system/           Build scripts
 
-📁 kernel_sim/
+kernel_sim/
    ├── Development kernel simulator
    ├── VFS with file descriptors
    ├── Example programs
    └── Testing framework
 
-📁 agents/
-   ├── 🔐 security_agent     Process monitoring & security
-   ├── 🧠 aiops_agent        AI operations (local/cloud)
-   ├── 🌐 network_agent      Cloud sync & networking
-   ├── 🖥️  ui_agent          Desktop environment
-   └── 🔌 device_agent       Hardware management
+agents/
+   ├── security_agent     Process monitoring & security
+   ├── aiops_agent        AI operations (local/cloud)
+   ├── network_agent      Cloud sync & networking
+   ├── ui_agent          Desktop environment
+   └── device_agent       Hardware management
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 1️⃣ Build the OS
+### 1. Build the OS
 ```bash
 git clone https://github.com/masilo-dev/AlphaClone-OS
 cd AlphaClone-OS/alphaclone-system
 ./system/build.sh
 ```
 
-### 2️⃣ Run in QEMU
+### 2. Run in QEMU
 ```bash
 ./tools/qemu_run.sh alphaclone.iso
 ```
 
-### 3️⃣ Start Agent System
+### 3. Start Agent System
 ```bash
 cd agents
 pip install -r requirements.txt
@@ -65,7 +65,7 @@ make run
 
 ---
 
-## 📊 System Architecture
+## System Architecture
 
 ```
 User Space
@@ -106,29 +106,29 @@ Hardware             │
 
 ---
 
-## 🔥 Key Features
+## Key Features
 
 | Component | Feature | Status |
 |-----------|---------|--------|
-| **Kernel** | Process Management | ✅ |
-| | Memory Management | ✅ |
-| | Virtual File System | ✅ |
-| | Device Drivers | ✅ |
-| **Agents** | AI Operations | ✅ |
-| | Security Monitoring | ✅ |
-| | Cloud Sync | ✅ |
-| | Desktop UI | ✅ |
-| | Hardware Control | ✅ |
-| **Security** | TPM Integration | ✅ |
-| | Sandboxing | ✅ |
-| | E2E Encryption | ✅ |
-| **System** | Monitoring | ✅ |
-| | Build Tools | ✅ |
-| | Documentation | ✅ |
+| **Kernel** | Process Management | Complete |
+| | Memory Management | Complete |
+| | Virtual File System | Complete |
+| | Device Drivers | Complete |
+| **Agents** | AI Operations | Complete |
+| | Security Monitoring | Complete |
+| | Cloud Sync | Complete |
+| | Desktop UI | Complete |
+| | Hardware Control | Complete |
+| **Security** | TPM Integration | Complete |
+| | Sandboxing | Complete |
+| | E2E Encryption | Complete |
+| **System** | Monitoring | Complete |
+| | Build Tools | Complete |
+| | Documentation | Complete |
 
 ---
 
-## 🎨 Screenshots & Visuals
+## Screenshots & Visuals
 
 ### Boot Sequence
 ```
@@ -151,11 +151,11 @@ Network:
   ↑ Upload:   0.8 MB/s
 
 Active Agents:
-  ✓ security_agent   PID:1234  [RUNNING]
-  ✓ aiops_agent      PID:1235  [RUNNING]
-  ✓ network_agent    PID:1236  [RUNNING]
-  ✓ ui_agent         PID:1237  [RUNNING]
-  ✓ device_agent     PID:1238  [RUNNING]
+  • security_agent   PID:1234  [RUNNING]
+  • aiops_agent      PID:1235  [RUNNING]
+  • network_agent    PID:1236  [RUNNING]
+  • ui_agent         PID:1237  [RUNNING]
+  • device_agent     PID:1238  [RUNNING]
 
 Recent Events:
   [18:15:42] Device connected: USB Storage
@@ -165,20 +165,20 @@ Recent Events:
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 All documentation is available in the repository:
 
-- 📖 [README.md](README.md) - Main overview
-- 🏗️ [docs/architecture.md](docs/architecture.md) - System design
-- 🔒 [docs/agent_integration.md](docs/agent_integration.md) - Agent system
-- ⚙️ [docs/FEATURES.md](docs/FEATURES.md) - Feature details
-- 🤝 [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) - How to contribute
-- 🔐 [alphaclone-system/SECURITY.md](alphaclone-system/SECURITY.md) - Security
+- [README.md](README.md) - Main overview
+- [docs/architecture.md](docs/architecture.md) - System design
+- [docs/agent_integration.md](docs/agent_integration.md) - Agent system
+- [docs/FEATURES.md](docs/FEATURES.md) - Feature details
+- [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) - How to contribute
+- [alphaclone-system/SECURITY.md](alphaclone-system/SECURITY.md) - Security
 
 ---
 
-## 🌟 Use Cases
+## Use Cases
 
 ### 1. Development Workstation
 Complete OS for system programming with full toolchain
@@ -197,26 +197,26 @@ Study OS architecture and AI integration
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 
 ```
 AlphaClone-OS/
-├── README.md                    ⭐ Start here!
-├── LICENSE                      📄 MIT License
+├── README.md                    Start here!
+├── LICENSE                      MIT License
 │
-├── alphaclone-system/           🏗️ Production OS
+├── alphaclone-system/           Production OS
 │   ├── boot/                    Bootloader
 │   ├── kernel/                  Kernel code
 │   ├── agents/                  TypeScript orchestrator
 │   ├── system/                  Build scripts
 │   └── tools/                   Development tools
 │
-├── kernel_sim/                  🔬 Development simulator
+├── kernel_sim/                  Development simulator
 │   ├── vfs_fd.c                VFS implementation
 │   ├── examples/               Example programs
 │   └── Makefile                Build system
 │
-├── agents/                      🤖 Intelligent agents
+├── agents/                      Intelligent agents
 │   ├── agent_runtime/          Core runtime
 │   │   ├── runtime.py          Message bus & IPC
 │   │   ├── auth.py             TPM integration
@@ -235,22 +235,22 @@ AlphaClone-OS/
 │   ├── agent_launcher.py       Agent manager
 │   └── Makefile                Build & run
 │
-├── docs/                        📚 Documentation
+├── docs/                        Documentation
 │   ├── architecture.md
 │   ├── FEATURES.md
 │   ├── CONTRIBUTING.md
 │   └── agent_integration.md
 │
-└── tools/                       🛠️ Utilities
+└── tools/                       Utilities
     ├── create_disk_image.sh
     └── qemu_boot.sh
 ```
 
 ---
 
-## 🎯 Project Status
+## Project Status
 
-### Completed ✅
+### Completed
 - [x] Kernel implementation with VFS
 - [x] Process scheduler and memory management
 - [x] Device drivers (VGA, keyboard, disk)
@@ -262,7 +262,7 @@ AlphaClone-OS/
 - [x] Build and deployment tools
 - [x] Comprehensive documentation
 
-### In Progress 🚧
+### In Progress
 - [ ] Native x86_64 optimization
 - [ ] Additional device drivers
 - [ ] Package manager
@@ -270,7 +270,7 @@ AlphaClone-OS/
 
 ---
 
-## 🚀 Performance
+## Performance
 
 - **Boot Time**: < 5 seconds (GRUB to desktop)
 - **Memory Usage**: ~256MB base system
@@ -280,7 +280,7 @@ AlphaClone-OS/
 
 ---
 
-## 🔗 Links
+## Links
 
 - **Repository**: https://github.com/masilo-dev/AlphaClone-OS
 - **Issues**: https://github.com/masilo-dev/AlphaClone-OS/issues
@@ -288,13 +288,13 @@ AlphaClone-OS/
 
 ---
 
-## 📄 License
+## License
 
 MIT License - See [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built with modern tools and technologies:
 - C for kernel implementation
@@ -305,6 +305,6 @@ Built with modern tools and technologies:
 
 ---
 
-**AlphaClone-OS - Production-ready, AI-powered operating system** 🚀
+**AlphaClone-OS - Production-ready, AI-powered operating system**
 
 Visit: https://github.com/masilo-dev/AlphaClone-OS
