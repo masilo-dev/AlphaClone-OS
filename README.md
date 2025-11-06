@@ -18,6 +18,18 @@ AlphaClone-OS is a complete operating system featuring:
 
 ---
 
+## 🎬 Animated Showcase
+
+Check out our [interactive animated showcase](showcase/alphaclone-os-animation.html) featuring:
+- Cinematic startup sequence with the AlphaClone logo
+- All six core modules: WebCore, MobileCore, DashCore, ChatCore, CRMCore, and APIHub
+- Smooth 60fps animations with glowing effects and matrix-style code visualization
+- Professional dark-futuristic interface in 4K quality
+
+**[View the Animation →](showcase/README.md)**
+
+---
+
 ## 📸 System Architecture
 
 ```
